@@ -2,10 +2,11 @@
 name: note-it
 description: Save useful conversation content to the personal vault when asked to note it, remember this or capture an idea; also retrieve or correct a capture.
 license: proprietary-internal / no external licence granted
+compatibility: "Requires authorised access to the personal Markdown vault; local vault operations use the connected macOS computer."
 metadata:
   target-platform: macOS
-  version: 1.1.0
-  updated: 2026-10-31
+  version: "1.2.0"
+  updated: "2026-10-31"
   provenance: altior-authored
 ---
 

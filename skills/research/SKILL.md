@@ -4,8 +4,8 @@ description: Research a question or read web sources using the chosen search/ext
 license: proprietary-internal / no external licence granted
 metadata:
   target-platform: macOS
-  version: 1.1.0
-  updated: 2026-10-31
+  version: "1.2.0"
+  updated: "2026-10-31"
   provenance: altior-authored
 ---
 

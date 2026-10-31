@@ -1,6 +1,6 @@
 # Official guidance and upstream sources
 
-Version: 1.2.0 · 2026-10-31
+Version: 1.3.0 · 2026-10-31
 
 Read the relevant current developer docs when learning a tool. These are the short routes needed
 by this package; installation/account availability still depends on the user's actual environment.
@@ -8,7 +8,9 @@ by this package; installation/account availability still depends on the user's a
 - **Dots:** [computers/apps](https://learn.chatgpt.com/docs/dots/computers-and-apps) and
   [tasks/memory](https://learn.chatgpt.com/docs/dots/tasks-and-memory). Local access, source scope,
   native recurring work and its connection requirements.
-- **Skill packaging:** [OpenAI's skill guide](https://developers.openai.com/plugins/build/skills).
+- **Skill format:** the cross-company [Agent Skills specification](https://agentskills.io/specification)
+  and [creator best practices](https://agentskills.io/skill-creation/best-practices).
+- **Product packaging:** [OpenAI's skill guide](https://developers.openai.com/plugins/build/skills).
   Focused SKILL.md folders, resources and supported packaging; reading a repo isn't installation.
 - **Knowledge:** [Obsidian vaults](https://obsidian.md/help/vault),
   [sync](https://obsidian.md/help/sync-notes) and
@@ -49,10 +51,21 @@ open as described in the Dots guidance above. Do not silently switch to another 
   Check for case-only filename collisions and existing sync copies before creating another note.
   When the Mac is unavailable, distinguish pending from saved; retry by inspecting the original result.
 
-Every bundled skill follows the Skill Creator writing approach: precise `name`/`description`,
-version/provenance/licence metadata, **Inputs and context**, **Workflow**, and **Result and boundaries**.
-The description controls discovery; the body supplies task-specific decisions, relevant links and
-observable completion. Reuse the root ten principles instead of repeating an enterprise policy.
+The Agent Skills specification owns the portable format: a matching skill directory and `SKILL.md`,
+with required `name`/`description` in YAML frontmatter. Optional fields are `license`, `compatibility`,
+`metadata` and experimental `allowed-tools`; do not invent top-level title, version or capability keys.
+Keep version/provenance under `metadata`, whose keys and values must be strings; quote ISO dates
+so YAML does not turn them into date objects. Use `compatibility` only for actual environment needs.
+
+The Markdown heading supplies the human-readable title. Explain capabilities, useful examples,
+completion and limits in the body. SuperDot prefers **Inputs and context**, **Workflow**, and
+**Result and boundaries** for consistency; these headings are our convention, not mandated by the
+standard. Keep instructions concise and references directly reachable; supporting files load on demand.
+The description controls discovery. Reuse the root ten principles instead of repeating enterprise policy.
 Load this shared section for local work or skill authoring/vetting, not every conversational reply.
 Keep optional supporting files proportional to the task. Written, installed and exercised are
 different states; document checks alone establish neither activation nor real Dot compatibility.
+
+The specification names `skills-ref validate` as its reference check. If that tool is unavailable,
+check the published field constraints with existing tooling and say which check was used; don't
+claim reference-tool certification or install dependencies merely for a documentation edit.

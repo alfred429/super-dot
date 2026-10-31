@@ -4,8 +4,8 @@ description: Use the smallest complete solution for coding/build tasks, especial
 license: MIT
 metadata:
   target-platform: macOS
-  version: 1.1.0
-  updated: 2026-10-31
+  version: "1.2.0"
+  updated: "2026-10-31"
   provenance: altior-derived
   upstream: DietrichGebert/ponytail@96608e078b2d5ea607c5c3b8b5a54d1c1fba6846
 ---

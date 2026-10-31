@@ -4,8 +4,8 @@ description: Diagnose a concrete error or unexpected tool/software behaviour bef
 license: MIT
 metadata:
   target-platform: macOS
-  version: 1.1.0
-  updated: 2026-10-31
+  version: "1.2.0"
+  updated: "2026-10-31"
   provenance: altior-derived
   upstream: obra/superpowers@2ce8aa15d05bd57213e6f746f953aafb7ded7a8b
 ---

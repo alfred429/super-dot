@@ -2,10 +2,11 @@
 name: journal
 description: Help with a morning starter, evening reflection or daily journal using the user's chosen available sources and their own reflections.
 license: proprietary-internal / no external licence granted
+compatibility: "Drafting uses permitted source context. Saving to a local Markdown vault requires access to the connected macOS computer."
 metadata:
   target-platform: macOS
-  version: 1.1.0
-  updated: 2026-10-31
+  version: "1.2.0"
+  updated: "2026-10-31"
   provenance: altior-authored
 ---
 

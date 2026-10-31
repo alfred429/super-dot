@@ -4,8 +4,8 @@ description: "Offer ADHD-friendly, manageable output when requested or chosen as
 license: MIT
 metadata:
   target-platform: macOS
-  version: 1.1.0
-  updated: 2026-10-31
+  version: "1.2.0"
+  updated: "2026-10-31"
   provenance: altior-derived
   upstream: ayghri/i-have-adhd@1ecea1993b7fce257ffbd686c070948b5e07eda6
 ---

@@ -4,8 +4,8 @@ description: Inspect a new or changed skill for purpose, source, permissions and
 license: proprietary-internal / no external licence granted
 metadata:
   target-platform: macOS
-  version: 1.1.0
-  updated: 2026-10-31
+  version: "1.2.0"
+  updated: "2026-10-31"
   provenance: altior-authored
 ---
 
@@ -25,7 +25,9 @@ Use the [shared writing/macOS standard](../../references/README.md#macos-and-ski
    file scope, credential references and consequential actions such as deletion, sending or publishing.
 3. Check macOS suitability: supported tools/shell syntax, path handling, permissions and absence
    of assumed Linux/VPS services. Verify unfamiliar behaviour against official developer docs.
-4. Inspect name/description, local references and activation boundaries. Flag unexplained downloads,
+4. Check frontmatter against the [Agent Skills specification](https://agentskills.io/specification):
+   matching name/folder, useful description, string-valued custom metadata and valid optional fields.
+   Inspect local references and activation boundaries. Flag unexplained downloads,
    broad access or embedded credentials without printing values or executing the suspect material.
 
 ## Result and boundaries

@@ -1,13 +1,16 @@
 # SuperDot capability catalog
 
-Version: 1.2.0 · 2026-10-31
+Version: 1.3.0 · 2026-10-31
 
 One personal starter repository. The Markdown supplies guidance and reusable foundations;
 skills use the tools and permissions actually available in the user's environment.
 
 All 13 skills follow the [shared macOS/writing standard](../references/README.md#macos-and-skill-writing-standard),
 with precise discovery descriptions, inputs/context, workflow, completion/boundaries and versioned
-provenance. The current skill revision is 1.1.0. Preserve this repository's layout when using them:
+provenance. The current skill revision is 1.2.0, aligned with the
+[Agent Skills specification](https://agentskills.io/specification): string-valued custom metadata
+and environment compatibility where needed. Our body headings are a house convention, not extra
+required specification fields. Preserve this repository's layout when using them:
 their supporting links reach shared templates/references/notices. These are repository-bundled
 instructions; no custom plugin manifest or automatic Dot activation is claimed. External plugin
 connections are covered by the tool guides, not reimplemented in this repo.

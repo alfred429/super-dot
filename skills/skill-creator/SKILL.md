@@ -4,8 +4,8 @@ description: Create or improve a reusable skill when the user wants to preserve 
 license: proprietary-internal / no external licence granted
 metadata:
   target-platform: macOS
-  version: 1.1.0
-  updated: 2026-10-31
+  version: "1.2.0"
+  updated: "2026-10-31"
   provenance: altior-authored
 ---
 
@@ -16,14 +16,16 @@ metadata:
 Identify the requested user goal, existing method, intended runtime and any skill being changed.
 Check for an adequate existing skill first. Prefer a method supported by real usage; label an
 untested method honestly. Read the [shared writing/macOS standard](../../references/README.md#macos-and-skill-writing-standard)
-and the host's current [official skill guidance](https://developers.openai.com/plugins/build/skills).
+and the cross-company [Agent Skills specification](https://agentskills.io/specification).
+Use the host's [product guidance](https://developers.openai.com/plugins/build/skills) for installation.
 
 ## Workflow
 
 1. Use the supported creator where available and respect the requested output location. Updating
    an existing skill does not require reinitialising its directory or installing it.
 2. Give one recognisable purpose a lowercase kebab-case folder and matching `name`. Write a concise
-   discovery `description`; retain version, provenance and licence metadata and upstream notices.
+   discovery `description`. Keep version/provenance in `metadata` as string values, including quoted
+   dates. Retain licences/notices; use optional `compatibility` only for actual environment requirements.
 3. State relevant inputs/access, the useful workflow, observable result and what to do when access
    or authority is missing. Keep detailed material in supporting files only when it earns its place.
 4. Tailor machine-specific guidance to macOS. Avoid builder-specific home paths, GNU-only command
