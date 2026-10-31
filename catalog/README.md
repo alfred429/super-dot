@@ -1,6 +1,6 @@
 # SuperDot capability catalog
 
-Version: 1.4.0 · 2026-10-31
+Version: 1.5.0 · 2026-10-31
 
 One personal starter repository. The Markdown supplies guidance and reusable foundations;
 skills use the tools and permissions actually available in the user's environment.
@@ -8,7 +8,7 @@ skills use the tools and permissions actually available in the user's environmen
 All 18 skills follow the [shared macOS/writing standard](../references/README.md#macos-and-skill-writing-standard),
 with precise discovery descriptions, inputs/context, workflow, completion/boundaries and versioned
 provenance. Versions are recorded per skill: Vault Maintainer, Journal and Daily Planning are v1.3.0,
-the five new upkeep/scheduling skills are v1.0.0, and the remaining core skills are v1.2.0. All align with the
+Scheduling is v1.1.0, the four other new upkeep skills are v1.0.0, and remaining core skills are v1.2.0. All align with the
 [Agent Skills specification](https://agentskills.io/specification): string-valued custom metadata
 and environment compatibility where needed. Our body headings are a house convention, not extra
 required specification fields. Preserve this repository's layout when using them:
@@ -46,7 +46,7 @@ connections are covered by the tool guides, not reimplemented in this repo.
 | Personal vault | Obsidian-compatible Markdown; six life areas | Private user-owned location; Mac access for local writes |
 | Project starters | Ready README, AGENTS and PROJECT files | Actual user goal and a few personal edits |
 | Journal | Selected conversation material first | Separate opt-in for each additional source |
-| Routines | [SCHEDULE.md](../SCHEDULE.md) supplies editable proposals | Chosen jobs/scope, timezone, delivery and supported native scheduling; no automatic activation |
+| Routines | [SCHEDULE.md](../SCHEDULE.md) covers all 18 skills: eight standard jobs, optional research, and request/event policies | Programme the accepted preset during setup using native scheduling; record actual IDs, scope, timezone and delivery |
 | Credential custody | Apple Keychain and supported private sign-in | Tool-specific private authentication/use; generic custom entry unproven |
 | Notes/content/sharing | Notion | Chosen account, destination and sharing scope |
 | Hosting | Cloudflare **or** Vercel | One reused/new account; publication and costs chosen by user |

@@ -1,6 +1,6 @@
 # Set up SuperDot
 
-Version: 1.3.0 · 2026-10-31
+Version: 1.4.0 · 2026-10-31
 
 Work through these steps with the person. Use what they already have. Ask one small question at a
 time only when a needed choice is missing. Keep credentials out of conversation. Their instructions
@@ -73,10 +73,13 @@ Use [Note It](skills/note-it/SKILL.md) for one harmless user-chosen fact. File i
 inspect it and retrieve it. Invite a correction and preserve the correction.
 Use [Journal](skills/journal/SKILL.md) to create a first entry from permitted material.
 
-Offer morning/evening prompts and the maintenance routines in the private `System/SCHEDULE.md`.
-Use [Scheduling](skills/scheduling/SKILL.md) after the person chooses jobs, times/timezone, scope
-and delivery. Record actual native task IDs and inspected results there; if scheduling is unavailable,
-leave the routines on request. Suggested template times are not pre-authorised appointments.
+Offer the private `System/SCHEDULE.md` standard routine bundle as one preset: combined morning
+planning/journal, evening journal, daily storage/vault care, weekly Notion/instruction/shared-learning
+reviews and a schedule check. Use [Scheduling](skills/scheduling/SKILL.md) to programme accepted
+settings after resolving missing timezone/scope/delivery; don't interview the person about every
+job. Research briefs are optional and need a chosen topic. The full run-policy table covers every
+skill, including those that run on request. Record actual native task IDs and inspected results;
+if scheduling is unavailable, leave that work on request. Writing the template activates no tasks.
 
 ## 5. Connect useful tools
 
