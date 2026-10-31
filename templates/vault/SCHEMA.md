@@ -1,6 +1,6 @@
 # A small knowledge convention
 
-Template version: 1.0.0 · 2026-10-31
+Template version: 1.1.0 · 2026-10-31
 
 Keep sources, maintained knowledge and personal reflection distinguishable. This is inspired by
 [Karpathy's LLM wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f),
@@ -46,3 +46,14 @@ when meaning conflicts. Do not silently overwrite. Inspect the saved result befo
 Add a source link and a small number of useful tags; avoid rigid tagging bureaucracy. Record a brief
 dated change note for a material correction. Keep secrets out of all notes. More journal access
 means more available context only when the person has chosen to include that source.
+
+## Maintenance and learnings
+
+Keep dated upkeep reports in `System/Maintenance/<routine>/` unless an existing convention applies.
+Reports record coverage, evidence, changes and proposals; link useful findings from the root/area index.
+Reports aren't replacement source notes and do not authorise deletion or instruction edits.
+
+A learning note belongs in its relevant area, with source/date, the observed outcome, affected project
+or instruction file and whether the lesson is a candidate or user-confirmed. Reuse existing tags and
+capture identity; link supporting reports rather than copying whole chats. Cross-project summaries
+retain sources and exceptions, omit unnecessary personal detail and propose any shared rule for approval.

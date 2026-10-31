@@ -1,6 +1,6 @@
 # My life — knowledge index
 
-Template version: 1.0.0 · 2026-10-31
+Template version: 1.1.0 · 2026-10-31
 
 These Obsidian links resolve after setup copies the templates into your personal vault.
 
@@ -14,6 +14,9 @@ These Obsidian links resolve after setup copies the templates into your personal
 
 `Inbox/` holds captures awaiting a home. `Sources/` retains permitted references/originals.
 `Journal/` holds dated reflections. `System/Templates/` holds reusable journal/project starters.
+[[System/SCHEDULE|My routines and upkeep]] holds chosen schedules after setup. Maintenance reports
+and learning-review summaries live in `System/Maintenance/` unless the schema chooses another home;
+link useful findings below so they can be surfaced without exposing private notes elsewhere.
 
 ## Active projects and useful notes
 

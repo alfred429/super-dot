@@ -4,7 +4,7 @@ description: Plan a manageable day, review commitments or set user-chosen routin
 license: proprietary-internal / no external licence granted
 metadata:
   target-platform: macOS
-  version: "1.2.0"
+  version: "1.3.0"
   updated: "2026-10-31"
   provenance: altior-authored
 ---
@@ -25,9 +25,9 @@ before asking the person to restate it. For local work, follow the [macOS guidan
    useful, respecting personal time, quiet periods and the person's own pace.
 3. Before an authorised calendar change, check conflicts, destination account and timezone.
    Clarify material ambiguity; don't create invitations or commitments outside granted scope.
-4. For a routine, establish purpose, chosen timing/timezone and notification destination.
-   Use native scheduling, inspect its saved reference and record it in the existing preferences/progress.
-   If scheduling is unavailable, help on request.
+4. For a routine, establish purpose, chosen timing/timezone and notification destination, then use
+   [Scheduling](../scheduling/SKILL.md) with the person's private `System/SCHEDULE.md`.
+   Reuse the recorded native task instead of creating duplicates. If unavailable, help on request.
 
 ## Result and boundaries
 

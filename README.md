@@ -1,6 +1,6 @@
 # SuperDot
 
-Version: 1.2.0 · 2026-10-31
+Version: 1.3.0 · 2026-10-31
 
 Give your Dot a useful starting point for everyday life: a personal knowledge vault, a journal,
 familiar life areas, practical skills and tools for making things.
@@ -26,6 +26,9 @@ features in the user's app. Explicitly load the relevant area/project instructio
 - **Room to grow:** project starters, skill creation/vetting, research, routines and gentle vault care.
 - **Connected creation:** Notion, Apple Keychain guidance, hosting, web research and Hyperframes.
 - **Planning and content:** ClickUp, n8n social-media automations and Higgsfield premium media.
+- **Ongoing care:** vault/Notion organisation, daily storage reports, instruction review and grouped
+  learnings, coordinated through an editable [schedule](SCHEDULE.md). Removal and instruction changes
+  require explicit approval; the schedule starts as a proposal.
 
 The [capability catalog](catalog/README.md) explains the collection and its upstream sources.
 The skills follow one [macOS and writing standard](references/README.md#macos-and-skill-writing-standard).

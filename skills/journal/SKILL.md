@@ -5,7 +5,7 @@ license: proprietary-internal / no external licence granted
 compatibility: "Drafting uses permitted source context. Saving to a local Markdown vault requires access to the connected macOS computer."
 metadata:
   target-platform: macOS
-  version: "1.2.0"
+  version: "1.3.0"
   updated: "2026-10-31"
   provenance: altior-authored
 ---
@@ -40,5 +40,6 @@ project or [daily plan](../daily-planning/SKILL.md), avoiding competing task lis
 
 Additional shopping, school, social, news or music sources require supported access and separate
 choice. Revocation stops new collection; ask separately about retained entries. Never imply complete
-access to the person's day or all chats. Native recurring prompts need chosen times/timezone and
-notification settings; otherwise help on request. No extra scheduler is part of this skill.
+access to the person's day or all chats. Use [Scheduling](../scheduling/SKILL.md) and the person's
+private schedule for chosen recurring prompts; otherwise help on request. No extra scheduler is
+part of this skill.

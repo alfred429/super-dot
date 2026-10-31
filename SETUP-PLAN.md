@@ -1,6 +1,6 @@
 # Set up SuperDot
 
-Version: 1.2.0 · 2026-10-31
+Version: 1.3.0 · 2026-10-31
 
 Work through these steps with the person. Use what they already have. Ask one small question at a
 time only when a needed choice is missing. Keep credentials out of conversation. Their instructions
@@ -16,6 +16,8 @@ Copy the four files from [templates/vault](templates/vault/README.md) into the w
 Create `Inbox/`, `Sources/`, `Journal/`, `Life/` and `System/`. Copy the six folders in
 `templates/life/` into `Life/`. Copy the journal and project starters into `System/Templates/Journal/`
 and `System/Templates/Project/`; include empty `notes/` and `assets/` folders in the project starter.
+Copy [SCHEDULE.md](SCHEDULE.md) to the private `System/SCHEDULE.md` as proposed routines,
+preserving any existing personalised schedule record. Copying it activates nothing.
 
 ```text
 My-SuperDot/
@@ -71,9 +73,10 @@ Use [Note It](skills/note-it/SKILL.md) for one harmless user-chosen fact. File i
 inspect it and retrieve it. Invite a correction and preserve the correction.
 Use [Journal](skills/journal/SKILL.md) to create a first entry from permitted material.
 
-Offer morning/evening prompts, daily planning and vault care at chosen times. Save routines using
-available native task features, with the user's timezone and notification choice. Record the actual
-task reference in the README; if no scheduling feature is available, leave the routine on request.
+Offer morning/evening prompts and the maintenance routines in the private `System/SCHEDULE.md`.
+Use [Scheduling](skills/scheduling/SKILL.md) after the person chooses jobs, times/timezone, scope
+and delivery. Record actual native task IDs and inspected results there; if scheduling is unavailable,
+leave the routines on request. Suggested template times are not pre-authorised appointments.
 
 ## 5. Connect useful tools
 
@@ -86,6 +89,12 @@ Offer these setup guides, allowing each to be skipped or resumed:
 - [Hyperframes](tools/hyperframes.md) for video and presentations on the Mac.
 - [ClickUp, n8n and Higgsfield](tools/planning-automation-content.md) for planning, social-media
   automations and premium content generation.
+
+The upkeep collection adds [Vault Maintainer](skills/vault-care/SKILL.md),
+[Notion Organizer](skills/notion-organizer/SKILL.md), [Storage Maintainer](skills/storage-maintainer/SKILL.md),
+[Agent Instruction Review](skills/agent-instruction-review/SKILL.md) and
+[Shared Learnings](skills/shared-learnings/SKILL.md). Explain their reports and approval boundaries
+before enabling the chosen routines. Storage removal and instruction edits always need explicit approval.
 
 Use supported account connections and user-controlled sign-in. Email/calendar can enrich planning
 and the journal after separate opt-in; other services follow as actual access becomes available.

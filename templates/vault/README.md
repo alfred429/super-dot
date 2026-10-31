@@ -1,6 +1,6 @@
 # My SuperDot — start here
 
-Template version: 1.0.0 · 2026-10-31
+Template version: 1.1.0 · 2026-10-31
 
 Your knowledge, projects and journal share one home. Capture something useful, put it in the right
 life area, and link it to related projects or reflections. Start with a sentence; organise as needed.
@@ -21,6 +21,12 @@ explains the few note/source conventions. The assistant reads these before worki
 
 Example: “Call me Alex. Europe/London. Help me finish my portfolio; keep family notes private.”
 That is enough to start. Change any default when it stops helping.
+
+`System/SCHEDULE.md` holds chosen routines and actual native task references. Suggested times
+start as proposals. Private upkeep reports live under the schema's report home, defaulting to
+`System/Maintenance/`; add links to useful results here rather than copying their contents.
+Storage reports recommend cleanup but remove nothing without explicit approval. Instruction-review
+and grouped-learning reports propose changes; they do not automatically rewrite `AGENTS.md` files.
 
 ## Life areas
 

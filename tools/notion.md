@@ -1,6 +1,6 @@
 # Notion — selected notes, content and sharing
 
-Version: 1.0.0 · 2026-10-31
+Version: 1.1.0 · 2026-10-31
 
 Keep the private vault as the knowledge home. Use Notion for content the person deliberately
 wants to organise, collaborate on or share; a connected account is not permission to mirror it all.
@@ -22,3 +22,7 @@ granted scope and keep usage within the person's choice.
 
 Example: turn a chosen project note into a private article draft, then ask where to share it.
 Emailing, publishing and changing access require the user's clear authorisation.
+
+For ongoing organisation, use [Notion Organizer](../skills/notion-organizer/SKILL.md) on the chosen
+pages/databases. It preserves content and reports proposed structural changes for approval; schedule
+it only through the person's chosen [routine settings](../SCHEDULE.md).
