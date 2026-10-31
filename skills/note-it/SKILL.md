@@ -3,30 +3,40 @@ name: note-it
 description: Save useful conversation content to the personal vault when asked to note it, remember this or capture an idea; also retrieve or correct a capture.
 license: proprietary-internal / no external licence granted
 metadata:
-  version: 1.0.0
+  target-platform: macOS
+  version: 1.1.0
   updated: 2026-10-31
   provenance: altior-authored
 ---
 
 # Note It
 
-Capture the useful meaning, not the whole transcript. Read the personal vault's root instructions,
-preferences and `SCHEMA.md`; then the relevant life-area context. See the [vault convention](../../templates/vault/SCHEMA.md)
-for the starter format. The user's private vault, not this package, receives the result.
+## Inputs and context
 
-1. Identify what the user wants kept: fact, idea, decision, reminder or project development. Use
-   available context; ask only if the meaning or destination materially changes the result.
-2. Choose Personal, Family, Work, Hobbies, Money or Wellbeing. Use Inbox if unclear. Read related
-   notes and check the original capture ID before making a new note. Link cross-area material.
-3. Save the smallest useful note with date/timezone, source reference, stable capture ID and a few
-   tags. Preserve attribution, user wording and meaningful corrections. Distinguish inference.
-4. Inspect the resulting file. Confirm briefly what was saved and its human-readable location.
-   On retrieval, read the actual note; on correction, update that note and retain useful history.
+Use when the person asks to save, retrieve or correct useful knowledge. Identify their selected
+vault, the relevant conversation/material and any existing note. Read the vault's root instructions,
+preferences, schema and the applicable life-area context. For local work, follow the [macOS guidance](../../references/README.md#macos-and-skill-writing-standard).
+The [starter schema](../../templates/vault/SCHEMA.md) is a reference; the person's existing schema
+and personal choices govern their installed vault.
 
-An intention to remember does not authorise sending, sharing, scheduling or a purchase. Offer the
-appropriate next action only when useful. Never capture secrets. If access is unavailable, report
-waiting; use a real supported pending task if available, never claim an unwritten note was saved.
-Before replaying after an interruption, inspect the destination to avoid duplicate captures.
+## Workflow
 
-Example: “Note it: I'd like to try wildlife photography” creates a Hobbies note, not an equipment
-order or a project the user never requested. Related journal entries link to the same knowledge.
+1. Extract the fact, idea or decision they want kept. Preserve meaning and attribution; ask only
+   when missing information would materially change the content or destination.
+2. Choose the relevant area or Inbox. Search existing notes and the original capture ID before
+   creating another. Use the user's renamed areas when applicable; link cross-area knowledge.
+3. Create or narrowly update the note with source/date, a stable capture ID and useful tags.
+   Keep user statements, sourced facts and assistant inference distinguishable. Preserve meaningful
+   corrections and prior content rather than replacing an entire personal note.
+4. Read the saved file before confirming. For retrieval, answer from the actual note; for a correction,
+   update the existing item and retain a brief change record when the meaning changes.
+
+## Result and boundaries
+
+Return what was kept and where, or the requested retrieved information. A successful capture
+exists in the private vault, not this source repository. If access is missing, report waiting and
+the needed next step; call work queued only when a durable native task actually exists.
+Before retrying an interrupted write, inspect the destination for the original capture.
+
+Do not save secrets or treat remembering as permission to share, schedule or purchase.
+Example: an interest in wildlife photography becomes a Hobbies note, not an equipment order.

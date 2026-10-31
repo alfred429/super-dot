@@ -3,27 +3,39 @@ name: skill-creator
 description: Create or improve a reusable skill when the user wants to preserve a useful method, using the host's supported skill-authoring tools.
 license: proprietary-internal / no external licence granted
 metadata:
-  version: 1.0.0
+  target-platform: macOS
+  version: 1.1.0
   updated: 2026-10-31
   provenance: altior-authored
 ---
 
 # Skill creator
 
-Prefer a useful existing skill over another copy. Read the relevant method and what happened when
-it was used. If the method is theoretical, label that clearly; don't describe it as proven.
-Follow the host's supported creator and current [official skill guidance](https://developers.openai.com/plugins/build/skills).
-Any applicable authoring/approval rules still apply; writing a file grants no installation authority.
+## Inputs and context
 
-For one recognisable user goal, create a lowercase kebab-case folder containing `SKILL.md` with
-matching `name` and a concise `description` explaining when it applies. Record version, provenance
-and licence. The body needs the useful steps, required inputs/access, output, boundaries and what
-to do when something is missing. Put large detail behind relevant links only when needed.
+Identify the requested user goal, existing method, intended runtime and any skill being changed.
+Check for an adequate existing skill first. Prefer a method supported by real usage; label an
+untested method honestly. Read the [shared writing/macOS standard](../../references/README.md#macos-and-skill-writing-standard)
+and the host's current [official skill guidance](https://developers.openai.com/plugins/build/skills).
 
-Keep instructions portable and concise. Reuse tools; add scripts only for a concrete need. Never
-embed credentials, personal records or someone else's private policies. Preserve licence notices
-for adapted material and avoid invented runtime capabilities.
+## Workflow
 
-Inspect metadata, links and an example use appropriate to the change. Use
-[skill vetting](../skill-vetting/SKILL.md) before installing unfamiliar code or permissions. Report
-written versus installed versus exercised separately. Respect existing user edits on updates.
+1. Use the supported creator where available and respect the requested output location. Updating
+   an existing skill does not require reinitialising its directory or installing it.
+2. Give one recognisable purpose a lowercase kebab-case folder and matching `name`. Write a concise
+   discovery `description`; retain version, provenance and licence metadata and upstream notices.
+3. State relevant inputs/access, the useful workflow, observable result and what to do when access
+   or authority is missing. Keep detailed material in supporting files only when it earns its place.
+4. Tailor machine-specific guidance to macOS. Avoid builder-specific home paths, GNU-only command
+   assumptions, Linux service managers and hidden dependencies on private company configuration.
+5. Inspect frontmatter, references and a representative use appropriate to the change. Use the
+   host creator's lightweight validator when available; don't install a testing stack for a text edit.
+
+## Result and boundaries
+
+Return the skill location, purpose and what was checked. Distinguish written, installed and
+exercised. Follow any applicable authoring/approval rules; file creation grants no runtime permission.
+Use [skill vetting](../skill-vetting/SKILL.md) for unfamiliar code or permissions before adoption.
+
+Never embed credentials or personal records. Reuse tools, preserve user edits and avoid extra
+scripts, UI metadata, manifests or auxiliary docs unless the actual packaging/workflow needs them.

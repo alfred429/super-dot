@@ -1,6 +1,6 @@
 # SuperDot
 
-Version: 1.1.0 · 2026-10-31
+Version: 1.2.0 · 2026-10-31
 
 Give your Dot a useful starting point for everyday life: a personal knowledge vault, a journal,
 familiar life areas, practical skills and tools for making things.
@@ -28,6 +28,8 @@ features in the user's app. Explicitly load the relevant area/project instructio
 - **Planning and content:** ClickUp, n8n social-media automations and Higgsfield premium media.
 
 The [capability catalog](catalog/README.md) explains the collection and its upstream sources.
+The skills follow one [macOS and writing standard](references/README.md#macos-and-skill-writing-standard).
+Keep the whole package together so their supporting templates and references remain available.
 
 ## Try saying
 

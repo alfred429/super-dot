@@ -3,7 +3,8 @@ name: debugging
 description: Diagnose a concrete error or unexpected tool/software behaviour before making the smallest useful fix.
 license: MIT
 metadata:
-  version: 1.0.0
+  target-platform: macOS
+  version: 1.1.0
   updated: 2026-10-31
   provenance: altior-derived
   upstream: obra/superpowers@2ce8aa15d05bd57213e6f746f953aafb7ded7a8b
@@ -11,21 +12,32 @@ metadata:
 
 # Debugging
 
-Personal adaptation of Superpowers' systematic debugging; [MIT notice](../../licenses/superpowers.txt).
-Find the cause before changing things. Keep the investigation proportional to the actual problem.
+Adapted from Superpowers' systematic debugging;
+[MIT notice](../../licenses/superpowers.txt).
 
-1. Read the error and relevant existing files/state. Reproduce through the smallest harmless action
-   or inspect available evidence if reproduction is unavailable. Never dump secrets or full environments.
-2. Check what changed and compare a working example. Consult current official developer docs for
-   unfamiliar tools. Identify where expected behaviour first differs from what happened.
-3. State one likely cause supported by evidence. Make the smallest reversible change that tests it;
-   preserve existing error handling, personal data and unrelated work.
-4. Repeat the relevant action or run a focused existing check. A meaningful new logic change needs
-   a small behavioural check; a wording correction doesn't need a testing project.
+## Inputs and context
 
-If the fix fails, use the new evidence rather than stacking guesses. After repeated unsuccessful
-attempts, stop and revisit the assumption before another edit. Ask for missing access or a decision
-when needed. Never restart services, install tools or change permissions outside granted scope.
+Identify expected versus actual behaviour, the smallest available reproduction, relevant files
+and recent changes. Establish the real execution host before interpreting an error.
+For local work, follow the [macOS guidance](../../references/README.md#macos-and-skill-writing-standard).
 
-Report the cause, change and observed outcome briefly. Say what remains uncertain rather than
-calling an untested change fixed. Use [Ponytail](../ponytail/SKILL.md) to keep the solution small.
+## Workflow
+
+1. Read the error and relevant existing state. Reproduce through a harmless action or use available
+   evidence when reproduction is unavailable. Never dump credentials or the full environment.
+2. Compare a working example and consult official docs for unfamiliar tools. For macOS command
+   failures, check the installed command, shell, permissions and BSD/GNU differences before editing
+   configuration. Don't assume a missing shell command means a new install is required.
+3. State one evidence-backed hypothesis and make the smallest reversible change that addresses it.
+   Preserve error handling, personal data and unrelated work.
+4. Repeat the relevant action or use a focused existing check. A meaningful logic change warrants
+   one small behavioural check; a wording correction does not need a test programme.
+
+## Result and boundaries
+
+Report the cause, change and observed result. If a fix fails, use the new evidence rather than
+stacking guesses. After repeated unsuccessful attempts, stop and revisit the assumption or ask
+for the missing decision/access. Say unverified when the outcome cannot be checked.
+
+Use [Ponytail](../ponytail/SKILL.md) for proportional changes. Do not restart services, install tools,
+use sudo or change account/privacy permissions outside the user's granted scope.

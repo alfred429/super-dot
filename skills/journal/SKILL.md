@@ -3,34 +3,41 @@ name: journal
 description: Help with a morning starter, evening reflection or daily journal using the user's chosen available sources and their own reflections.
 license: proprietary-internal / no external licence granted
 metadata:
-  version: 1.0.0
+  target-platform: macOS
+  version: 1.1.0
   updated: 2026-10-31
   provenance: altior-authored
 ---
 
 # Journal
 
-Read the personal vault preferences and existing entry for the chosen local date. Use the
-[morning](../../templates/journal/morning.md) or [evening](../../templates/journal/evening.md) starter
-copied into the user's workspace. Store entries under `Journal/YYYY-MM-DD/`, as `morning.md`
-and/or `evening.md`. Confirm the date/timezone rather than guessing across midnight.
+## Inputs and context
 
-- Start with selected conversation material and saved notes. Use only sources actually available
-  and permitted for the journal; a connected email/calendar account is not automatic journal consent.
-- State source coverage briefly. Link observed events and commitments to evidence. Keep assistant
-  interpretations tentative and separate from the user's feelings. Missing access is a gap, not an empty day.
-- Offer one useful reflection prompt or a short starting draft. A sentence is enough; allow skipping
-  without guilt. Ask for their perspective rather than auto-filling their emotional state.
-- Morning: carry forward useful agreed commitments, identify one priority and a manageable start.
-  Evening: summarise available activity, invite reflection and choose an optional carry-forward item.
-- Preserve user edits. Append or propose a narrow correction to an existing entry rather than
-  regenerating over their writing. Inspect the saved file before confirming it.
+Identify morning, evening or a requested date range, the person's timezone, selected sources and
+existing entries. Read their vault preferences and schema. Use the
+[morning](../../templates/journal/morning.md) or [evening](../../templates/journal/evening.md)
+starter only when an entry needs creating. For local work, follow the [macOS guidance](../../references/README.md#macos-and-skill-writing-standard).
 
-Link relevant life-area notes/projects. Use [Note It](../note-it/SKILL.md) for durable knowledge and
-[daily planning](../daily-planning/SKILL.md) for agreed actions, instead of keeping competing task lists.
+## Workflow
 
-The journal can grow with separately chosen email/calendar access, then supported shopping,
-school and interest sources. X favourites, YouTube, news or music history are future inputs only
-where supported and explicitly chosen. Revocation stops new collection; ask separately about retained entries.
-Native morning/evening schedules require chosen timing, timezone and notification settings; otherwise
-help on request. Never imply access to every conversation or a complete record of the person's life.
+1. Gather only available material the person has chosen for the journal. Start with selected chat
+   and saved notes. Email/calendar access does not automatically grant journal inclusion.
+2. State source coverage briefly and link factual activity to evidence. Separate suggestions and
+   interpretations from observed events. Missing access is a gap, not an empty day.
+3. For morning, surface useful agreed commitments, one priority and a manageable start.
+   For evening, draft a short activity summary and offer one optional reflection question.
+   Let the person supply feelings; a sentence or skipping the entry is fine.
+4. Read an existing entry before editing. Preserve personal writing and corrections. Save under
+   the vault's convention, using `Journal/YYYY-MM-DD/morning.md` or `evening.md` by default.
+   Inspect the saved result before reporting it.
+
+## Result and boundaries
+
+Return a reviewable entry or the saved location, clearly distinguishing a draft from a saved file.
+Link durable knowledge through [Note It](../note-it/SKILL.md) and agreed actions to the existing
+project or [daily plan](../daily-planning/SKILL.md), avoiding competing task lists.
+
+Additional shopping, school, social, news or music sources require supported access and separate
+choice. Revocation stops new collection; ask separately about retained entries. Never imply complete
+access to the person's day or all chats. Native recurring prompts need chosen times/timezone and
+notification settings; otherwise help on request. No extra scheduler is part of this skill.

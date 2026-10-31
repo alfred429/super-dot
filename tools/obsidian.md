@@ -1,9 +1,12 @@
 # Obsidian — your personal knowledge vault
 
-Version: 1.0.0 · 2026-10-31
+Version: 1.1.0 · 2026-10-31
 
 Use an existing vault when suitable. Otherwise follow [SuperDot setup](../SETUP-PLAN.md) to create
 the personal folder outside this source package. The user authorises the location and any merge.
+Use the person's actual Mac home/vault location and the
+[macOS file guidance](../references/README.md#macos-and-skill-writing-standard); check for case-only
+filename collisions and existing synced copies before adding another note.
 
 1. Open Obsidian on the Mac. Install from [Obsidian](https://obsidian.md/download) only if needed
    and authorised.

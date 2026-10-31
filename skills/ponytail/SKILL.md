@@ -3,7 +3,8 @@ name: ponytail
 description: Use the smallest complete solution for coding/build tasks, especially when asked for Ponytail, simplicity, reuse or less overengineering.
 license: MIT
 metadata:
-  version: 1.0.0
+  target-platform: macOS
+  version: 1.1.0
   updated: 2026-10-31
   provenance: altior-derived
   upstream: DietrichGebert/ponytail@96608e078b2d5ea607c5c3b8b5a54d1c1fba6846
@@ -11,44 +12,33 @@ metadata:
 
 # Ponytail
 
-Adapted from [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail); see the
-[MIT notice](../../licenses/ponytail.txt). Metadata and level selection are made portable for this starter.
+Adapted from [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail);
+[MIT notice](../../licenses/ponytail.txt). The core principle is the smallest complete solution.
 
-You are a lazy senior developer. The best code is the code never written. You solve the whole problem with the least new code. End your reply with one or two lines: what you skipped or did not check, and any risk the user must know.
+## Inputs and context
 
-Active for the whole session until the user says "stop ponytail" or "normal mode". Switch level by asking for Ponytail lite, full or ultra; no runtime-specific slash command is assumed.
+Read the requested outcome and the existing files/tools it touches. Identify the callers,
+configuration or outputs that must remain consistent. Separate required scope from attractive extras.
+For local work, follow the [macOS guidance](../../references/README.md#macos-and-skill-writing-standard). Apply for the session once requested until the user changes that preference.
 
-## Before you write
+## Workflow
 
-Read the task and the code it touches. List every place your change must reach: callers, tests, fixtures, config, exports. Check what your change could break for users: data it would destroy or expose, callers that stop working. That is scope. Extra features are not.
+1. Check whether the proposed mechanism needs to exist. Reuse an adequate existing workflow or
+   implementation first, then native platform/standard-library capabilities, then an installed dependency.
+2. If new work is necessary, make the smallest readable change that fully solves the request.
+   Avoid speculative abstractions, wrappers, options, dependencies and auxiliary documentation.
+3. Preserve the codebase's conventions, error handling, validation, accessibility and personal data.
+   For a bug, inspect relevant callers and fix the shared cause rather than repeating a workaround.
+4. Check the actual result. Use a focused existing check or one small behavioural check for meaningful
+   new logic. A trivial text edit needs inspection, not a testing programme.
 
-## The smallest complete change
+## Result and boundaries
 
-Take the first option that fully works:
+Return the useful outcome and material limitation briefly. Name skipped work only when it affects
+expectations. Do not report an unrun check as passed. Simplicity never permits data loss, weakened
+permissions or omission of a requirement the user actually asked for.
 
-1. Does it need to exist? Skip features, options and flexibility nobody asked for, and name them in one line. A vague request ("build me X") gets the smallest version that does the core job.
-2. Already in this codebase (a helper, component, service, pattern)? Use it the way the surrounding code does.
-3. Standard library or a platform feature? Use it, unless the project has its own. A house component beats a native widget.
-4. An installed dependency? Use it. Never add a dependency for a few lines.
-5. Can it be one line a reader gets at a glance? One line.
-6. Otherwise: the minimum code that works.
-
-- Be lazy about the solution, never about the change itself: finish every part the task needs, including the callers, tests and fixtures your change breaks.
-- No abstraction, wrapper, type conversion, option, config, boilerplate or "for later" code nobody asked for. Keep values in the form the platform already gives you. Deletion beats addition. Keep the structure the codebase already has: its layers, interfaces and conventions.
-- The shortest working diff wins, once you know everything it must touch. A one-liner that needs decoding is not short.
-- Comment only the why the code cannot show, in one line.
-- Bug fix: before you edit, grep every caller of the function you touch, then fix the root cause once in the shared code.
-- Code you move or merge keeps its error handling and validation.
-- Between options of equal size, take the one that is correct on edge cases.
-- Lazy code without its check is unfinished: new non-trivial logic (a branch, a loop, a parser, money or security, or a whole new script or app) leaves one small test or an assert-based self-check. Trivial changes need none.
-- A shortcut with a known limit gets a code comment in this form: `shortcut: <the limit>, <when to upgrade>`.
-
-Never cut: validation at trust boundaries, error handling that prevents data loss, security, accessibility, the calibration real hardware needs, anything the user asked for.
-
-## Levels
-
-| Level | Behavior |
-|-------|----------|
-| **lite** | Build what was asked. Name the smaller option in one line and let the user pick. |
-| **full** | The rules above. Default. |
-| **ultra** | Also question the request: before building, push back on any part the need does not justify. |
+On macOS reuse available apps/tools; don't add Linux packages, service wrappers or a custom daemon
+for a solved problem. Offer levels in ordinary language: lite completes the request and mentions
+a smaller alternative; full applies these defaults; ultra also questions unjustified scope.
+Levels do not override the user's intent or permission boundaries.

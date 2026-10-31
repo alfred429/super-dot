@@ -1,9 +1,16 @@
 # SuperDot capability catalog
 
-Version: 1.1.0 · 2026-10-31
+Version: 1.2.0 · 2026-10-31
 
 One personal starter repository. The Markdown supplies guidance and reusable foundations;
 skills use the tools and permissions actually available in the user's environment.
+
+All 13 skills follow the [shared macOS/writing standard](../references/README.md#macos-and-skill-writing-standard),
+with precise discovery descriptions, inputs/context, workflow, completion/boundaries and versioned
+provenance. The current skill revision is 1.1.0. Preserve this repository's layout when using them:
+their supporting links reach shared templates/references/notices. These are repository-bundled
+instructions; no custom plugin manifest or automatic Dot activation is claimed. External plugin
+connections are covered by the tool guides, not reimplemented in this repo.
 
 ## Included skills
 
@@ -51,7 +58,7 @@ Reviewed 2026-10-31; these pins identify the inspected sources, not a floating u
 
 | Upstream | Inspected revision | Used here | Licence |
 |---|---|---|---|
-| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail/tree/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846) | `96608e078b2d5ea607c5c3b8b5a54d1c1fba6846` | Portable metadata/level selection; core method retained | [MIT notice](../licenses/ponytail.txt) |
+| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail/tree/96608e078b2d5ea607c5c3b8b5a54d1c1fba6846) | `96608e078b2d5ea607c5c3b8b5a54d1c1fba6846` | Concise professional/macOS adaptation; core reuse/smallest-complete-solution method retained | [MIT notice](../licenses/ponytail.txt) |
 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd/tree/1ecea1993b7fce257ffbd686c070948b5e07eda6) | `1ecea1993b7fce257ffbd686c070948b5e07eda6` | Personal output adaptation; no diagnosis, unsupported flags or invented time estimates | [MIT notice](../licenses/i-have-adhd.txt) |
 | [obra/superpowers](https://github.com/obra/superpowers/tree/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b) | `2ce8aa15d05bd57213e6f746f953aafb7ded7a8b` | Simplified brainstorming and debugging; no mandatory review/delegation chain | [MIT notice](../licenses/superpowers.txt) |
 

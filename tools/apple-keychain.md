@@ -1,10 +1,12 @@
 # Apple Keychain and private sign-in
 
-Version: 1.0.0 · 2026-10-31
+Version: 1.1.0 · 2026-10-31
 
 Use native Apple security and the service's supported authentication. SuperDot does not need
 its own password vault. The assistant can keep service names and connection status in the
 personal README; secret values stay outside chat, notes and model-visible tools.
+Follow the [shared macOS guidance](../references/README.md#macos-and-skill-writing-standard).
+Never copy a Linux credential-file recipe into this setup or bypass a macOS access-control prompt.
 
 ## Connect a service
 

@@ -1,11 +1,14 @@
 # Hyperframes — video and presentations
 
-Version: 1.0.0 · 2026-10-31
+Version: 1.1.0 · 2026-10-31
 
 Reuse Hyperframes' existing authoring skills, templates and render pipeline on the Mac.
 Start with [the official project](https://github.com/heygen-com/hyperframes) and its current
 [CLI reference](https://github.com/heygen-com/hyperframes/blob/main/docs/packages/cli.mdx).
 Check the installed version/help before following commands; don't replace a working pipeline.
+Follow the [shared macOS guidance](../references/README.md#macos-and-skill-writing-standard).
+For command-line work, discover the installed Node/FFmpeg locations rather than assuming an Apple
+Silicon or Intel Homebrew prefix; a non-interactive task may have a different PATH from Terminal.
 
 ## Set up once
 

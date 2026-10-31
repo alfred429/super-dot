@@ -3,26 +3,37 @@ name: vault-care
 description: Gently organise the personal vault, file Inbox notes, improve links or perform user-chosen scheduled knowledge maintenance.
 license: proprietary-internal / no external licence granted
 metadata:
-  version: 1.0.0
+  target-platform: macOS
+  version: 1.1.0
   updated: 2026-10-31
   provenance: altior-authored
 ---
 
 # Vault care
 
-Read the user's vault instructions/schema and the requested maintenance scope. Reuse search and
-ordinary file tools; the vault does not need a database or a new maintenance service.
+## Inputs and context
 
-1. Inspect relevant Inbox notes, area navigation and reported broken links. Keep the pass bounded
-   to the chosen scope rather than reading the person's whole life unnecessarily.
-2. File clear captures into their area when authorised, retaining source/capture identity and updating
-   links. Flag ambiguous destinations, contradictions and likely duplicates for the person.
-3. Refresh mechanical links/indexes within scope. Preserve original sources, personal wording and
-   journal reflection. Ask before deleting, merging meaning or bulk-moving existing material.
-4. Inspect changed notes/links. Record a brief dated result in the root README's maintenance/setup
-   progress and surface only something useful or requiring attention.
+Identify the person's vault, maintenance request or saved routine, and the permitted scope.
+Read the root instructions/schema and relevant area context. Reuse existing file/search tools.
+For local work, follow the [macOS guidance](../../references/README.md#macos-and-skill-writing-standard).
 
-For scheduled care, use a supported native saved task after the user chooses scope, time/timezone
-and notification preference. Record its actual reference; inspect an execution before calling the
-routine working. Keep quiet on uneventful runs. If the Mac is unavailable, report waiting only when
-relevant and resume through supported features. Do not build a scheduler or promise automatic wake-up.
+## Workflow
+
+1. Inspect the selected Inbox items, navigation or reported link issues. Keep the pass bounded;
+   routine care does not require reading the whole vault.
+2. File clear captures within the agreed scope, retaining source and capture identity. Update
+   affected links and check for duplicates before creating another working copy.
+3. Repair mechanical links/indexes where authorised. Present ambiguous filing, contradictions
+   or meaning-changing merges for the person's choice. Preserve sources and journal reflection.
+4. Inspect changed notes and links. Leave one short dated maintenance outcome in the existing
+   progress record, distinguishing attempted work from successful changes.
+
+## Result and boundaries
+
+Report useful changes and any decision needed. Stay quiet on uneventful scheduled runs unless
+the user requested a report. Ask before deletion, bulk moves or consolidation of personal meaning.
+
+Use native scheduling only after the person chooses scope, timing/timezone and notifications;
+retain the actual task reference and inspect its output before calling the routine working.
+If the Mac is unavailable, defer local work through supported tasks where possible. Do not create
+a daemon, add cron jobs or promise automatic reconnection behaviour that has not been observed.

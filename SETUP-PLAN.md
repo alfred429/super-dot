@@ -1,6 +1,6 @@
 # Set up SuperDot
 
-Version: 1.1.0 · 2026-10-31
+Version: 1.2.0 · 2026-10-31
 
 Work through these steps with the person. Use what they already have. Ask one small question at a
 time only when a needed choice is missing. Keep credentials out of conversation. Their instructions
@@ -49,6 +49,11 @@ results or when pausing. It is enough to write `done`, `next` or `waiting` with 
 Resume from that list; do not repeat finished steps or reset personal changes.
 
 ## 3. Make the skills available
+
+Keep the complete SuperDot directory together: skill links point to shared templates, references
+and notices in this package. Copying an individual skill folder alone does not include those resources.
+Use the [macOS and writing standard](references/README.md#macos-and-skill-writing-standard) for local
+execution; resolve the person's actual paths and tools rather than importing VPS configuration.
 
 Use [the catalog](catalog/README.md) to choose the relevant skill and explicitly read its `SKILL.md`.
 These are focused instructions for the user's Dot/local tasks, not separate running agents.

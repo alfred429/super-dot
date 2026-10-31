@@ -1,6 +1,6 @@
 # Official guidance and upstream sources
 
-Version: 1.1.0 · 2026-10-31
+Version: 1.2.0 · 2026-10-31
 
 Read the relevant current developer docs when learning a tool. These are the short routes needed
 by this package; installation/account availability still depends on the user's actual environment.
@@ -30,3 +30,29 @@ by this package; installation/account availability still depends on the user's a
 
 Pinned skill sources, adaptation notes and retained licences are in the [catalog](../catalog/README.md).
 Use existing official integrations and methods before adding anything new.
+
+## macOS and skill-writing standard
+
+SuperDot uses the phone for conversation and the user's chosen Mac for local work. Confirm the
+actual execution host and authorised workspace before a file operation. Cloud research or thinking
+can proceed without Mac access; local writes cannot. Keep the connected Mac online with ChatGPT
+open as described in the Dots guidance above. Do not silently switch to another computer.
+
+- Resolve the person's actual home and selected vault path; quote paths containing spaces. Never
+  copy a builder's Linux/VPS paths, account names or fleet configuration into the user's setup.
+- Use tools already present on macOS and read official developer docs for unfamiliar commands.
+  Respect the user's shell and macOS/BSD utility syntax; don't assume GNU flags, apt or systemd.
+  Discover installed command locations rather than assuming a Homebrew prefix or changing PATH.
+- Reuse native account permissions, supported private sign-in and Apple Keychain. Do not use
+  sudo, alter privacy permissions, install software or add background services without clear scope.
+- Inspect destinations before writing. Preserve personal edits and meaningful prior versions.
+  Check for case-only filename collisions and existing sync copies before creating another note.
+  When the Mac is unavailable, distinguish pending from saved; retry by inspecting the original result.
+
+Every bundled skill follows the Skill Creator writing approach: precise `name`/`description`,
+version/provenance/licence metadata, **Inputs and context**, **Workflow**, and **Result and boundaries**.
+The description controls discovery; the body supplies task-specific decisions, relevant links and
+observable completion. Reuse the root ten principles instead of repeating an enterprise policy.
+Load this shared section for local work or skill authoring/vetting, not every conversational reply.
+Keep optional supporting files proportional to the task. Written, installed and exercised are
+different states; document checks alone establish neither activation nor real Dot compatibility.
