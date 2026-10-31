@@ -1,6 +1,6 @@
 # SuperDot capability catalog
 
-Version: 1.0.0 · 2026-10-31
+Version: 1.1.0 · 2026-10-31
 
 One personal starter repository. The Markdown supplies guidance and reusable foundations;
 skills use the tools and permissions actually available in the user's environment.
@@ -36,6 +36,9 @@ skills use the tools and permissions actually available in the user's environmen
 | Hosting | Cloudflare **or** Vercel | One reused/new account; publication and costs chosen by user |
 | Search/extraction | Tavily **or** Firecrawl | One supported connection; bounded usage |
 | Creative outputs | Hyperframes | Existing/supported Mac installation and its upstream skills |
+| Planning | [ClickUp](../tools/planning-automation-content.md) | Chosen workspace/List and supported connection; one working task/status home |
+| Social-media automations | [n8n](../tools/planning-automation-content.md) | Existing instance or chosen Cloud account, supported nodes and authorised publishing scope |
+| Premium media | [Higgsfield](../tools/planning-automation-content.md) | Chosen account/credits, generation brief and supported web/API route |
 
 Use [tool guides](../tools/obsidian.md) and [setup](../SETUP-PLAN.md) for the actual steps.
 Local skills need a connected computer under current Dots guidance. File instructions can be read

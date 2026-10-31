@@ -1,6 +1,6 @@
 # A short SuperDot walkthrough
 
-Version: 1.0.0 · 2026-10-31
+Version: 1.1.0 · 2026-10-31
 
 Use harmless fictional/demo information. This is a practical rehearsal, not an extensive test suite.
 
@@ -21,7 +21,7 @@ Record only the useful result or blocker in the personal README. For a chosen na
 inspect the saved schedule/timezone and actual output before calling it working. Skip account actions
 that haven't been authorised; the documentation remains useful without signing up to every service.
 
-**Build status:** the 45 Markdown files are the deliverable. Dot/Mac/iPhone execution, connected
+**Build status:** the 46 Markdown files are the deliverable. Dot/Mac/iPhone execution, connected
 accounts and private API-secret capture are not established by writing or inspecting these files.
 This walkthrough has not been run on a real Dot in this build. Ordinary document checks cover
 file inventory, links, skill metadata and consistency; no live data or credentials are needed.

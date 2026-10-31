@@ -1,6 +1,6 @@
 # SuperDot
 
-Version: 1.0.0 · 2026-10-31
+Version: 1.1.0 · 2026-10-31
 
 Give your Dot a useful starting point for everyday life: a personal knowledge vault, a journal,
 familiar life areas, practical skills and tools for making things.
@@ -25,6 +25,7 @@ features in the user's app. Explicitly load the relevant area/project instructio
 - **Focused help:** brainstorming, Grill Me, Prompt Master, debugging, Ponytail and i-have-adhd.
 - **Room to grow:** project starters, skill creation/vetting, research, routines and gentle vault care.
 - **Connected creation:** Notion, Apple Keychain guidance, hosting, web research and Hyperframes.
+- **Planning and content:** ClickUp, n8n social-media automations and Higgsfield premium media.
 
 The [capability catalog](catalog/README.md) explains the collection and its upstream sources.
 

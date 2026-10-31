@@ -1,6 +1,6 @@
 # Set up SuperDot
 
-Version: 1.0.0 · 2026-10-31
+Version: 1.1.0 · 2026-10-31
 
 Work through these steps with the person. Use what they already have. Ask one small question at a
 time only when a needed choice is missing. Keep credentials out of conversation. Their instructions
@@ -79,6 +79,8 @@ Offer these setup guides, allowing each to be skipped or resumed:
 - [Hosting](tools/hosting.md): choose/reuse Cloudflare or Vercel.
 - [Web research](tools/web-research.md): choose/reuse Tavily or Firecrawl.
 - [Hyperframes](tools/hyperframes.md) for video and presentations on the Mac.
+- [ClickUp, n8n and Higgsfield](tools/planning-automation-content.md) for planning, social-media
+  automations and premium content generation.
 
 Use supported account connections and user-controlled sign-in. Email/calendar can enrich planning
 and the journal after separate opt-in; other services follow as actual access becomes available.

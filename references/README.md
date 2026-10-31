@@ -1,6 +1,6 @@
 # Official guidance and upstream sources
 
-Version: 1.0.0 · 2026-10-31
+Version: 1.1.0 · 2026-10-31
 
 Read the relevant current developer docs when learning a tool. These are the short routes needed
 by this package; installation/account availability still depends on the user's actual environment.
@@ -22,6 +22,11 @@ by this package; installation/account availability still depends on the user's a
   [Firecrawl in ChatGPT/Codex](https://docs.firecrawl.dev/integrations/chatgpt-codex).
 - **Creative tools:** [Hyperframes upstream](https://github.com/heygen-com/hyperframes) and
   [CLI reference](https://github.com/heygen-com/hyperframes/blob/main/docs/packages/cli.mdx).
+- **Planning:** [ClickUp's official MCP server](https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server).
+- **Automations:** [n8n first workflow](https://docs.n8n.io/try-it-out/quickstart/),
+  [credentials](https://docs.n8n.io/credentials/) and
+  [LinkedIn node](https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.linkedin/).
+- **Premium content:** [Higgsfield](https://higgsfield.ai/) and [API quick start](https://open.higgsfield.ai/quick-start).
 
 Pinned skill sources, adaptation notes and retained licences are in the [catalog](../catalog/README.md).
 Use existing official integrations and methods before adding anything new.
